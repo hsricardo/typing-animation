@@ -1,4 +1,3 @@
-@import "./src/styles";
 $text-color: #111111;
 
 .text-animation {
@@ -15,15 +14,13 @@ $text-color: #111111;
     color: $text-color;
     text-align: center;
     font-weight: bolder;
-    // text-shadow: 0 .04em .1em $tertiary-text;
   }
 
   .text-animation-cursor {
     width: .375em;
     height: 4em;
     margin-left: .25em;
-    background-color: $text-color;;
-    // box-shadow: 0 .2em .5em $tertiary-text;
+    background-color: $text-color;
     animation: blink-cursor .75s step-end infinite;
   }
 }
@@ -31,22 +28,8 @@ $text-color: #111111;
 @keyframes blink-cursor {
   from, to {
     background-color: transparent;
-    // box-shadow: 0 .2em .5em transparent;
   }
   50% {
-    background-color: $text-color;;
-    // box-shadow: 0 .2em .5em $tertiary-text;
+    background-color: $text-color;
   }
 }
-
-// @media only screen and (max-width: $media-width) {
-//   .text-animation {
-//     .text-animation-display {
-//       font-size: 2.75em;
-//     }
-//     .text-animation-cursor {
-//       width: .25em;
-//       height: 3em;
-//     }
-//   }
-// }
